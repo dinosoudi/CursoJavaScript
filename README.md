@@ -1,4 +1,5 @@
 Curso que enseña:
+
 -Programación desde cero y paso a paso, sin necesidad de tener conocimientos previos.
 
 -JavaScript, el lenguaje de programación más popular en la actualidad.
