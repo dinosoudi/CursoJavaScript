@@ -1,7 +1,8 @@
 'use strict'
 
-// pedir 2 numeros, decir mayor, menor y si son iguales
-// solucionar que sean numeros los valores entrantes y no letras porque da error
+/**
+ * hacer un programa que muestre todos los numeros entre 2 numero introducidos por el usuario
+ */
 
 // se declaran las variables
 var num1;
@@ -10,20 +11,18 @@ var iguales;
 var mayor;
 var menor;
 
-// pide 2 numeros 
+// pide 2 numeros validos
 do{
     num1 = parseInt( prompt('Dame el primer numero: ',0) );
     num2 = parseInt( prompt('Dame el segundo numero: ',0) );
-}while(isNaN(num1) || isNaN(num2));
 
-// imprime si son iguales
-if (num1 == num2){
-    alert("los numeros son iguales: " + num1 + " y " + num2);
-    iguales = true;
-} else{
-    alert("los numeros son diferentes: " + num1 + " y " + num2)
-    iguales = false;
-}
+    if (num1 == num2){
+        iguales = true;
+    } else{
+        iguales = false;
+    }
+
+}while(isNaN(num1) || isNaN(num2) || iguales);
 
 // imprime cual es mayor y menor si no son iguales
 if(!iguales){
@@ -37,4 +36,9 @@ if(!iguales){
     alert("El numero mayor es: " + mayor + " y el menor es: " + menor);
 }
 
-// debugger
+// imprime los numeros de en medio
+console.log("Los numeros de enmedio entre " + menor + " y " + mayor +" son:");
+
+for (var i=menor + 1; i<mayor;i++){
+    console.log(i);
+}
