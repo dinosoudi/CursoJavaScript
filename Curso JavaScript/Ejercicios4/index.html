@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios 4</title>
+
+    
+
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. Formulario con campos: nombre, apellido y edad
+    2. Botón para enviar formulario
+    3. Mostrar datos por pantalla
+    4. validar formulario con js puro
+    -->
+
+    <h1>Ejercicio Dom, Eventos y funciones</h1>
+
+    <div class="box">
+        <form id="formulario">  
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="apellido">Apellidos: </label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+
+            <label for="edad">Edad: </label><br>
+            <input type="number" id="edad" name="edad"><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Información del usuario</h3><hr>
+
+        <p id="p_nombre">
+            nombre: <span></span>
+        </p>
+        <p id="p_apellidos">
+            apellidos: <span></span>
+        </p>
+        <p id="p_edad">
+            edad: <span></span>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="ejercicio1.js"></script>
+</body>
+</html>
